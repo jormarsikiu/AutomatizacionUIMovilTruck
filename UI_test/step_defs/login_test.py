@@ -1,12 +1,14 @@
 from pytest_bdd import scenarios, given, when, then, parsers
-from objects import *
+from .objects import *
 import time
+import pytest
 
 # Scenarios 
 scenarios('../features/login.feature')
 
 PAGE = 'https://test-moviltruck.azurewebsites.net/'
 
+@pytest.fixture
 @given('Abro la aplicación')
 def abro_la_aplicacion_moviltruck(sb):
     sb.get(PAGE)
