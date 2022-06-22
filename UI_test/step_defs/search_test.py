@@ -93,4 +93,7 @@ def buscar_principal(sb):
 
     sb.type(SearchMain.OpenCalendary, Fecha)
     sb.click_xpath(SearchMain.ButtonSearch)
-    time.sleep(6)
+    time.sleep(5)
+    
+    sb.click_xpath(SearchMain.OpenModalCarga)
+    time.sleep(5)

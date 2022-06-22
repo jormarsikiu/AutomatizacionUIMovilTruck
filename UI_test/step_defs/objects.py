@@ -31,3 +31,5 @@ class SearchMain():
     InputDestino = '''/html/body/app-root/body/app-header-geral/mat-drawer-container/mat-drawer-content/div/app-fast-booking/div/div[1]/div/div[4]/div/div/input'''
     OpenCalendary = '''/html/body/app-root/body/app-header-geral/mat-drawer-container/mat-drawer-content/div/app-fast-booking/div/div[1]/div/div[5]/div/div/input'''
     ButtonSearch = '''/html/body/app-root/body/app-header-geral/mat-drawer-container/mat-drawer-content/div/app-fast-booking/div/div[1]/div/div[6]/button'''
+    
+    OpenModalCarga = '''/html/body/app-root/body/app-header-geral/mat-drawer-container/mat-drawer-content/div/app-fast-booking/div/div[2]/div[2]/div[1]/div/div'''
