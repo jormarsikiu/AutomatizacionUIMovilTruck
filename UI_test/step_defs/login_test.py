@@ -27,4 +27,4 @@ def agrego_los_datos_y_guardo (sb,Email,Password):
     #presiono el boton para inicar sesión
     sb.execute_script(Login.LoginButton)
     sb.is_valid_url("https://test-moviltruck.azurewebsites.net/#/")
-    time.sleep(5)
+    time.sleep(8)
