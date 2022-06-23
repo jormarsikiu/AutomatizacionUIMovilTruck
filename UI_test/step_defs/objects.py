@@ -8,6 +8,7 @@ class Register():
     NextButton = '''document.querySelectorAll('.btn.btn-orange.btn-lg.btn-block.mt-4.ng-star-inserted')[0].click()'''
     AceptButton = '''document.querySelectorAll('.btn.btn-orange.btn-md.btn-block.wellbet')[0].click()'''
     AcceptPolicy = '''document.querySelectorAll('.mat-checkbox-background')[0].click()'''
+    image1 = '''/html/body/app-root/body/app-register-transport/div[2]/form/div[4]/div[1]/div/ngx-file-drop/div/div/div'''
     
 class SearchHome():
     SelectTypeHome = '''/html/body/app-root/body/app-home-landing/mat-drawer-container/mat-drawer-content/div[1]/div/div[2]/div[2]/div[1]/div[1]/div/mat-form-field'''

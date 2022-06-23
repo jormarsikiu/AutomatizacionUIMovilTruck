@@ -1,3 +1,5 @@
+from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.common.keys import Keys
 from pytest_bdd import scenarios, given, when, then, parsers
 from .objects import *
 import time
@@ -67,17 +69,17 @@ def agrego_los_datos_continuacion_y_guardo (sb):
     dir_name = os.path.dirname(os.path.abspath(__file__))
     file_path = os.path.join(dir_name, "example_logs/%s" % "screenshot.png")
     sb.choose_file("div.right-side form div:nth-of-type(4) div ngx-file-drop div input", file_path)
-    time.sleep(2)
+    time.sleep(6)
     sb.choose_file("div.right-side form div:nth-of-type(4) div:nth-of-type(2) ngx-file-drop div input", file_path)
-    time.sleep(2)
+    time.sleep(6)
     sb.choose_file("div.right-side form div:nth-of-type(4) div:nth-of-type(3) ngx-file-drop div input", file_path)
-    time.sleep(2)
+    time.sleep(10)
     sb.execute_script(Register.NextButton)
     time.sleep(2)
     sb.choose_file("div.right-side form div:nth-of-type(5) div:nth-of-type(1) ngx-file-drop div input", file_path)
     time.sleep(2)
     sb.choose_file("div.right-side form div:nth-of-type(5) div:nth-of-type(2) ngx-file-drop div input", file_path)
-    time.sleep(2)
+    time.sleep(10)
 
 
 @then('Acepto el acuerdo y guardo')

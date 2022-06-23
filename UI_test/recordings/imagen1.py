@@ -1,0 +1,31 @@
+from seleniumbase import BaseCase
+
+
+class RecorderTests(BaseCase):
+    def test_recording(self):
+        self.open("https://test-moviltruck.azurewebsites.net/")
+        self.click('a[href="#/register-list"]')
+        self.click("div.right-side div:nth-of-type(2) div")
+        self.type("input#fullName", "vdfbd")
+        self.click('label:contains("Apellido *")')
+        self.type("input#nroT22", "vxdvdx")
+        self.click('label[for="phoneNumber"]')
+        self.type("input#phoneNumber", "53543.")
+        self.type("input#email11", "jt2r@gmail.com")
+        self.type("input#pass", "Pa$$w0rd")
+        self.click('button:contains("Siguiente")')
+        self.type("input#dni", "28453")
+        self.type("input#nroT", "345354")
+        self.click('label:contains("Seguro de Mercancía y Carretera*")')
+        self.type("input#email233", "3543.54")
+        self.click("input#email")
+        self.type('input[placeholder="Busca tu ubicación exacta en el mapa"]', "cara")
+        self.click('button:contains("AGREGAR")')
+        self.click('button:contains("Siguiente")')
+        self.click("div#file-inputImagem div:nth-of-type(2)")
+        self.choose_file("div.right-side form div:nth-of-type(4) div ngx-file-drop div input", "")
+        self.click("div#file-inputImagem > div:nth-of-type(2)")
+        self.choose_file("div.right-side form div:nth-of-type(4) div:nth-of-type(2) ngx-file-drop div input", "")
+        self.click("div#file-inputImagem > div")
+        self.choose_file("div.right-side form div:nth-of-type(4) div:nth-of-type(3) ngx-file-drop div input", "")
+        self.click('button:contains("Siguiente")')
