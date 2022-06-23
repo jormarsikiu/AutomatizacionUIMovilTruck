@@ -59,7 +59,12 @@ def agrego_los_datos_continuacion_y_guardo (sb):
     time.sleep(2)
     sb.type(".search.pac-target-input", 'Caracas')
     time.sleep(2)
-    sb.click('div:contains("Distrito Capital, Venezuela")')
+    element = sb.wait_for_element_visible(".search.pac-target-input")
+    element.send_keys(Keys.ARROW_DOWN)
+    element.send_keys(Keys.ENTER)
+    
+    #time.sleep(2)
+    #sb.click('div:contains("Distrito Capital, Venezuela")')
     time.sleep(2)
     sb.execute_script(Register.AceptButton)
     time.sleep(5)
